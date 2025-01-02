@@ -12,7 +12,9 @@ namespace DomainLayer.Entities
         [Key] public int WarehouseID { get; set; }
         public string Warehousename { get; set; }
         public int? CityID { get; set; }
+        public ICollection<CitiesEntity> Cities { get; set; }
         public string AreaInSquareMeters { get; set; }
+        public List<ProductsEntity> Productset { get; set; }
 
     }
 }

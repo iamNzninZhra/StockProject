@@ -11,5 +11,7 @@ namespace DomainLayer.Entities
     {
         [Key] public int CityID { get; set; }
         public string CityName { get; set; }
+        public int? WarehouseID { get; set; }
+        public List<WarehousesEntity> Warehouses { get; set; }
     }
 }
